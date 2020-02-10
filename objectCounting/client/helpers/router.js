@@ -40,7 +40,7 @@ gup = function(path, name){
       return results[1];
  }
 
-Router.route('/lzr/welcome', function(){
+Router.route('/lzr/welcome/objectscount', function(){
 
 
 
@@ -88,21 +88,12 @@ Router.route('/task/:_id', function(){
   name: 'task'
 });
 
-Router.route('/instruction', function(){
-      path = window.location.href;
-      this.layout('MainLayout');
-      this.render('instruction');
-   });
-
-
 
 Router.route('/transit', function(){
       path = window.location.href;
       this.layout('MainLayout');
       this.render('transit');
    });
-
-
 
 Router.route('/finalPage', function(){
       path = window.location.href;
