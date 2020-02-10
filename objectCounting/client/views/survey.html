@@ -1,0 +1,121 @@
+<template name="survey">
+	<div id="welcome-instruction" class="instruction">
+
+		<h2>Survey</h2>
+
+		<h4>Great! Before you submit this HIT, please answer a few survey questions.</h4>
+		<div>
+			<p>1. What are the factors you considered when predicting the outcome of each speed dating event <b>before</b> you saw the algorithm’s prediction?<br>
+			<textarea id="predictionFactors" rows="5" cols="130"></textarea>
+			</p>
+
+			<p>2. Was your own initial prediction ever different from the algorithm’s prediction? If so, how did you decide whether or not to change your prediction after you saw the algorithm’s prediction?<br>
+			<textarea id="conflict" rows="5" cols="130"></textarea>
+			</p>
+
+			<p>3<sup>*</sup>. How confident were you about your own predictions on the first twenty speed dating participants (that is, <b>before</b> you saw any feedback on your performance and the algorithm’s performance)? Indicate your confidence on a scale of 1 (I was not confident at all) to 10 (I was very confident).<br>
+			<select id="confidenceBefore">
+			<option disabled selected value> -- Select -- </option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			</select>
+			</p>
+
+			<p>4<sup>*</sup>. How confident were you about your own predictions on the last twenty speed dating participants (that is, <b>after</b> you saw the feedback on your performance and the algorithm’s performance)? Indicate your confidence on a scale of 1 (I was not confident at all) to 10 (I was very confident).<br>
+			<select id="confidenceAfter">
+			<option disabled selected value> -- Select -- </option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			</select>
+			</p>
+
+			<p>5<sup>*</sup>. How much did you trust our machine learning algorithm's predictions on the first twenty speed dating participants (that is, <b>before</b> you saw any feedback on your performance and the algorithm’s performance)? Indicate your trust on a scale of 1 (I didn't trust it at all) to 10 (I fully trusted it).<br>
+			<select id="trustBefore">
+			<option disabled selected value> -- Select -- </option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			</select>
+			</p>
+
+			<p>6<sup>*</sup>. How much did you trust our machine learning algorithm's predictions on the last twenty speed dating participants (that is, <b>after</b> you saw the feedback on your performance and the algorithm’s performance)? Indicate your trust on a scale of 1 (I didn't trust it at all) to 10 (I fully trusted it).<br>
+			<select id="trustAfter">
+			<option disabled selected value> -- Select -- </option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			</select>
+			</p>
+
+			<p>7. What are the factors that influenced your level of trust in our machine learning algorithm?<br>
+			<textarea id="trustFactors" rows="5" cols="130"></textarea>
+			</p>
+
+			<p>8. Do you have any other comments or feedback? Did you find any bugs in this experiment?<br>
+			<textarea id="comment" rows="5" cols="130"></textarea>
+			</p>
+
+			<p>9<sup>*</sup>. What is your gender?<br>
+			<select id="gender">
+			<option disabled selected value> -- Select -- </option>
+			<option value="m">Male</option>
+			<option value="f">Female</option>
+			<option value="o">Other</option>
+			</select>
+			</p>
+
+			<p>10<sup>*</sup>. What is your age?<br>
+			<input type="text" id="age">
+			</p>
+
+			<p>11<sup>*</sup>. What is your highest level of education?<br>
+			<select id="education">
+			<option disabled selected value> -- Select -- </option>
+			<option value="1">Some high school or lower</option>
+			<option value="2">High school graduate</option>
+			<option value="3">Some college</option>
+			<option value="4">Bachelor degree</option>
+			<option value="5">Graduate school or higher</option>
+			</select>
+			</p>
+
+			<p id="error-block" class='red'>Please provided a valid answer in all required questions!</p>
+		</div>
+
+		
+	</div>
+	
+	<div id="buttonArea" align="center">
+		<a href="" id="welcome-btn" class="button-warning">Next</a>
+	</div>
+</template>

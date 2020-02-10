@@ -1,0 +1,87 @@
+<template name="Task">
+    <div id="welcome-instruction" class="instruction">
+
+        <h2>Counting Number Task <span id="number"></span>/6</h2>
+        <p>
+            Please review the image and count how many <b class="red"><span
+                id="objects"></span></b> are there in the picture.
+        </p>
+        <!--        <img></img>-->
+        <!--        <div id="markerPicArea">-->
+        <!--            <img id="markerPic" style="position: absolute; left: 50px; top: 150px"/>-->
+        <!--&lt;!&ndash;            <img src="/images/bonus.png" id="marker" style="display: none; position: absolute;" />&ndash;&gt;-->
+
+        <!--            <script>-->
+        <!--            document.getElementById("markerPic").src = image_urls[2]-->
+        <!--            console.log(document.getElementById("markerPic").posi)-->
+        <!--            // document.getElementById('markerPic').onclick = function(e){-->
+        <!--            //         with(document.getElementById('marker'))-->
+        <!--            //         {-->
+        <!--            //             style.left = e.pageX + 'px';-->
+        <!--            //             style.top = e.pageY + 'px';-->
+        <!--            //             style.display = 'block';-->
+        <!--            //         }-->
+        <!--            //         // Here you forward the coordinates e.pageX, e.pageY-->
+        <!--            //         // ... to whatever function that needs it-->
+        <!--            //     };-->
+        <!--            </script>-->
+
+        <!--        </div>-->
+
+        <div class="wrap" align="center">
+            <img id="markerPic" style="height: 500px"/>
+        </div>
+        <script type="text/javascript">
+            if (markerGroup == 1) {
+                $('.wrap').click(function (e) {
+                    var radius = 2;
+                    var offset = $(this).offset();
+                    var top = e.pageY - offset.top - radius + "px"
+                    var left = e.pageX - offset.left - radius + "px"
+                    var tempId = top + left + "ball"
+                    $(".wrap").append('<div class="ball" style="top: ' + top + '; left: ' + left + '"></div>')
+                })
+                // $('#markers').html(function(i, val) { return +val+1 });
+            }
+
+        </script>
+
+        <!--        <script>-->
+        <!--            $('.ball').on('click',function(a){-->
+        <!--            console.log("zhongle")-->
+        <!--            $(this).remove();-->
+        <!--        });</script>-->
+
+        <!--        <div class="wrap" align="center">-->
+        <!--            <img id="markerPic" height="400"/>-->
+        <!--        </div>-->
+        <!--        <script type="text/javascript">-->
+        <!--            $('.wrap').click(function(e){-->
+        <!--                var radius=2;//半径-->
+        <!--                var offset=$(this).offset();-->
+        <!--                var top=e.pageY-offset.top-radius+"px";-->
+        <!--                var left=e.pageX-offset.left-radius+"px";-->
+        <!--                $('.wrap').append('<div class="ball" style="top:'+top+';left:'+left+'"></div>')-->
+
+        <!--            })-->
+        <!--        </script>-->
+
+
+    </div>
+
+    <div style="margin-top: 420px; position: relative;" align="center">
+        <p id="currentMarkers">Current markers made on the picture: <span id="markers">  </span></p>
+        <p><b>What is the number of <span id="item"></span> in the image above?</b>
+            <input type="text" id="answer" onkeyup="value=value.replace(/[^\d.]/g,'')" size='20'>
+        </p>
+        <p id="errorBlock" class='red'>Please the valid answer!</p>
+
+
+    </div>
+
+
+    <div id="buttonArea" align="center">
+        <a href="#" id="clearButton" class="button-warning" role="button" style="width: 80px">Clear markers</a><br>
+        <a href="#" id="welcome-btn" class="button-warning" role="button">Next</a>
+    </div>
+</template>

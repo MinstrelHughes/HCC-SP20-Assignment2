@@ -1,0 +1,29 @@
+<template name="instructionCtnd">
+	<div id="welcome-instruction" class="instruction">
+
+		<h2>Instructions (Continued)</h2>
+
+		<div>
+			<p>
+				At the end of each speed dating event, the participant was asked whether he or she wanted to see his or her date again in the future. This is what we want you to predict! 
+			</p>
+			<p>
+				Specifically, for each task, you will follow the 3 steps below:<br>
+				<ol style="font-size: 16px;">
+				<li style="margin: 10px 0;">After you review the profile of the participant and his or her date, you will make a prediction about whether the participant indicated that he or she wanted to see the date again.</li>
+				<li style="margin: 10px 0;">After you've made your initial prediction, we will show you the prediction of our machine learning algorithm.  </li>
+				<div id="accuracyBlock" style="padding: 15px;" class="Rounded">
+					<i class="fa fa-question-circle" aria-hidden="true"></i> <b>How accurate is this algorithm?</b> <br>
+					We previously evaluated this algorithm on a large data set of speed dating participants and <b><span class='red'>its accuracy was <span id="acc"></span></span></b>, i.e., the algorithm's predictions were correct on <span id="acc2"></span> of the speed dating participants in this data set.
+				</div>
+				<li style="margin: 10px 0;">You will then be given a chance to revise your prediction and make a new (final) prediction. <span id="bonusStatement"><span class='red'><b>You will have the opportunity to earn bonuses in this HIT!</b></span> Specifically, if your <b>final prediction</b> for a task is correct, you will get an additional bonus of <b><span class='red' id='bonus'></span></b>; otherwise you will receive no bonus for that task.</span></li> 
+				</ol>
+			</p>
+		</div>
+		
+	</div>
+	
+	<div id="buttonArea" align="center">
+		<a href="#" id="welcome-btn" class="button-warning" role="button">Start Tasks</a>
+	</div>
+</template>

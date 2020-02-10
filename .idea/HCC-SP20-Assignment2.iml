@@ -3,6 +3,8 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/mltrust/.meteor/local" />
+      <excludeFolder url="file://$MODULE_DIR$/objectCounting/.meteor/local" />
       <excludeFolder url="file://$MODULE_DIR$/picture_marker/.meteor/local" />
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />

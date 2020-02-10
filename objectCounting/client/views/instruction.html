@@ -1,0 +1,83 @@
+<template name="instruction">
+	<div id="welcome-instruction" class="instruction">
+
+		<h2>Instructions</h2>
+
+		<div>
+			<p>
+				We are so glad that you decided to take this HIT! 
+			</p>
+			<p>
+				As we told you previously, in this HIT, you will be asked to complete a sequence of prediction tasks about the outcome of a speed dating event. For each task, you will see the profile of one participant in a speed dating event along with some information about his or her date. An example is shown below. We'll walk through this example to explain what the information displayed means.
+			</p>
+			<p>
+				Push the button below to start!
+			</p>
+		</div>
+		<div align="center" id="startButtonArea">
+			<a href="#" id="start-btn" class="button-warning" role="button">Start</a>
+			<br><br>
+		</div>
+		<div>
+			<div align="center">
+				<table id="profile" class="table-style-one">
+					<tr>
+						<td colspan="4" style="background-color:black; color: white; font-size:17px; text-align:center;" data-step="1" data-intro="Each task involves the profile of one speed dating participant and some information about his or her date. In the first section, you will see some basic demographic information about the participant."><b>Section 1: Basic Information about the Participant</b></td>
+					</tr>
+					<tr data-step="2" data-intro="For example, you will see the participant's gender, age, and field of study.">
+						<td><b>1. Gender:</b> Male</td>
+						<td style="width:230px;"><b>2. Age:</b> 29</td>
+						<td colspan="2"><b>3. Field:</b> Chemistry</td>
+					</tr>
+					<tr data-step="3" data-intro="In addition, you will also see the participant's race (Q4) and how important the participant thinks it is that his or her romantic partner shares the same racial background (Q5). The participant answered Q5 on a scale of 1 to 10, with 1 meaning extremely unimportant and 10 meaning extremely important.">
+						<td colspan="2"><b>4. Race:</b> European/Caucasian-American</td>
+						<td colspan="2"><b>5. Importance of same race: </b>8</td>
+					</tr>
+					<tr>
+						<td colspan="4" style="background-color:black; color: white; font-size:17px; text-align:center;"><b>Section 2: Basic Information about the Participant's Date</b></td>
+					</tr>
+					<tr data-step="4" data-intro="Now moving on to the second section, you will see some basic demographic information about the participant's date.">
+						<td><b>6. Date's Gender:</b> Female</td>
+						<td><b>7. Date's Age:</b> 33</td>
+						<td colspan="2"><b>8. Date's Race:</b> Asian/Pacific Islander/Asian-American</td>
+					</tr>
+					<tr data-step="5" data-intro="In Section 3, you will see what the participant said that they look for in a romantic partner. Specifically, they were each asked to distribute 100 points among 6 attributes: attractiveness, sincerity, intelligence, fun, ambition and shared interests. The more points allocated to an attribute, the more important they think that attribute is in a romantic partner.">
+						<td colspan="4" style="background-color:black; color: white; font-size:17px; text-align:center;"><b>Section 3: Expectation about romantic partners</b></td>
+					</tr>
+					<tr data-step="6" data-intro="For example, for this participant, the two most important attributes in a romantic partner are attractiveness (30 points) and sincerity (25 points).">
+						<td colspan="4">
+							<b>9. What does this participant look for in his partner?</b>
+							<div id="pie1" style="height: 200px; width:100%; margin: 0px auto;">
+							</div>
+						</td>
+					</tr>
+					<tr data-step='7' data-intro="Finally, in the last section, you will find the participant's evaluation about his or her date after the speed dating event.">
+						<td colspan="4" style="background-color:black; color: white; font-size:17px; text-align:center;"><b>Section 4: The Participant's Impression about His Date</b>
+						</td>
+					</tr>
+					<tr data-step='8' data-intro="The participant first rated his or her date on each of the 6 attributes (attractiveness, sincerity, etc.) on a scale of 0 to 10, with 0 meaning awful and 10 meaning great.">
+						<td colspan="4">
+							<b>10. The participant's rating of his date on the six attributes:</b>
+							<div id="bar1" style="height: 200px; width:100%; margin: 0px auto;">
+							</div>
+						</td>
+					</tr>
+					<tr data-step='10' data-intro="The participant also indicated how happy he or she expected to be with his or her date as a romantic partner and how much he or she liked the date. Again, 1 is the worst score and 10 is the best score.">
+						<td colspan="2">
+							<b>11. How happy does the participant expect to be with his date:</b> 5
+						</td>
+						<td colspan="2">
+							<b>12. How does the participant like his date:</b> 3
+						</td>
+					</tr>
+				</table>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+	<div id="buttonArea" align="center">
+		<a href="#" id="welcome-btn" class="button-warning" role="button">Next</a>
+	</div>
+</template>

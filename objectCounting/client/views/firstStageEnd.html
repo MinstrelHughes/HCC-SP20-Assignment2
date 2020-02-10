@@ -1,0 +1,30 @@
+<template name="firstStageEnd">
+	<div id="firstStageEnd-instruction" class="instruction">
+
+		<h2>Great Job!</h2>
+
+		<div>
+			<p>
+				Excellent! You've just completed 10 prediction tasks and you have finsihed the training part of the HIT! Now you are ready to do the real prediction part!
+			</p>
+			<p>
+				Just to give you a sense of how well you've predicted love so far:
+				<ul style="font-size: 15px; margin-left:30px;">
+					<li>
+						Before seeing the predictions of the machine learning algorithm, your predictions were correct on <b><span id="ownAcc" class='red'></span> of the first 10 prediction tasks</b>.
+					</li>
+					<li> 
+						<span id='accBlock'>Recall that we previously evaluated this algorithm on a large data set of speed dating participants and its accuracy was <b><span class='red' id="acc"></span></b>.</span>
+					</li>
+				</ul>   
+			</p>
+			
+			<p>Push the button below to continue to predict love!</p>
+		</div>
+		
+	</div>
+	
+	<div id="buttonArea" align="center">
+		<a href="" id="welcome-btn" class="button-warning">Continue</a>
+	</div>
+</template>

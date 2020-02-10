@@ -1,0 +1,26 @@
+<template name="info">
+	<div id="welcome-instruction" class="instruction">
+
+		<h2>Great Job!</h2>
+
+		<div>
+			<p>
+				Excellent! You've just completed 20 prediction tasks and you are halfway through this HIT!
+			</p>
+			<p>
+				Just to give you a sense of how well you've predicted love so far:
+				<ul style="font-size: 15px; margin-left:30px;">
+					<li>Before seeing the predictions of the machine learning algorithm, your predictions were correct on <b><span id="ownAcc" class='red'></span> of the first 20 prediction tasks</b>.</li>
+					<li>The machine learning algorithm was correct on <b><span id="actualAcc" class='red'></span> of the first 20 prediction tasks</b>. <span id='accBlock'>Recall that we previously evaluated this algorithm on a large data set of speed dating participants and its accuracy was <b><span class='red' id="acc"></span></b>.</span></li>
+				</ul>   
+			</p>
+			
+			<p>Push the button below to continue to predict love!</p>
+		</div>
+		
+	</div>
+	
+	<div id="buttonArea" align="center">
+		<a href="" id="welcome-btn" class="button-warning">Continue</a>
+	</div>
+</template>
